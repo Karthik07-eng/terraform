@@ -12,9 +12,9 @@ module "vpc" {
 # Create EC2 instance inside the VPC
 module "ec2" {
   source        = "./modules/ec2-instances"
-  ami           = "ami-02ddb77f8f93ca4ca"
+  ami           = "ami-08fe5144e4659a3b3"
   instance_type = "t2.micro"
-  subnet_id     = module.vpc.vpc_id
+  subnet_id     = subnet-01e8d0e330b25c6f3
   instance_name = "Web-Server"
 }
 
